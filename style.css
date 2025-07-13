@@ -1,0 +1,292 @@
+:root {
+  --header_footer_color: #333;
+  --primary_color: #18dcff;
+  --seconday_color: #1B9CFC;
+  --for_h2toh6: #2c2a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} /* ok */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* === Header ==== */
+header {
+  padding: 20px;
+  background-color: var(--header_footer_color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary_color);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary_color);
+}
+
+/* ==== Hero Section ===== */
+#hero {
+  padding: 100px 60px;
+  background: linear-gradient(135deg, var(--primary_color), var(--seconday_color));
+}
+
+.hero_container {
+  text-align: center;
+  color: white;
+}
+
+.hero_container h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero_container p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.hero_container button {
+  padding: 12px 25px;
+  border: none;
+  background-color: white;
+  color: var(--seconday_color);
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero_container button:hover {
+  background-color: var(--primary_color);
+  color: white;
+}
+
+/* ===== Why Choose Appify | Section ======= */
+#features {
+  padding: 60px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#features h2 {
+  font-size: 32px;
+  margin-bottom: 30px         ;
+  color: var(--for_h2toh6);
+}
+
+.features_grid {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.features_box {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.features_box 
+.fa-circle-check, 
+.fa-bolt,
+.fa-lock {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: var(--primary_color);
+}
+
+.features_box h3 {
+  font-size: 22px;
+  color: var(--for_h2toh6);
+  margin-bottom: 10px;
+}
+
+.features_box p {
+  font-size: 14px;
+  color: #545457;
+}
+
+/* ====== Our User Comments Section ======= */
+#testimonials {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+#testimonials h2 {
+  font-size: 32px;
+  color: var(--for_h2toh6);
+  margin-bottom: 30px;
+}
+
+#testimonials p {
+  font-size: 14px;
+  color: #545457;
+}
+
+/* ====== Get Started Section ====== */
+#cta {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--primary_color);
+  color: white;
+}
+
+#cta h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#cta p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#cta button {
+  background-color: white;
+  color: var(--primary_color);
+  padding: 12px 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cta button:hover {
+  background-color: #1B9CFC;
+  color: white;
+}
+
+/* ==== Footer Section ====== */
+footer {
+  background-color: var(--header_footer_color);
+  color: white;
+  padding: 20px;
+}
+
+.footer_container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_container p {
+  font-size: 14px;
+}
+
+.footer_container p a {
+  color: white;
+}
+
+.footer_social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_social a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.footer_social a:hover {
+  color: var(--seconday_color);
+}
+
+/* ====== Responsive Css ====== */
+@media (max-width: 650px) {
+  .fa-bars {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    top: 68px;
+    right: 0;
+    padding: 20px;
+    background-color: #444;
+  }
+  
+  nav.active {
+    display: flex;
+  }
+
+  .footer_conteiner {
+    flex-direction: column;
+     
+  }
+}
