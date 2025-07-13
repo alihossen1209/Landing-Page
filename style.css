@@ -265,6 +265,14 @@ footer {
 
 /* ====== Responsive Css ====== */
 @media (max-width: 650px) {
+  .hero_container {
+    padding: 60px 10px;
+  }
+  .hero_container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
   .fa-bars {
     display: block;
   }
