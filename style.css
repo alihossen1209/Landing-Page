@@ -265,7 +265,7 @@ footer {
 
 /* ====== Responsive Css ====== */
 @media (max-width: 650px) {
-  .hero_container {
+  .hero {
     padding: 50px 10px;
   }
   .hero_container h2 {
